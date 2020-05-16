@@ -219,6 +219,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "difference"
+version = "0.4.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ffef4c144e881a906ed5bd6e1e749dc1955cd3f0c7969d3d34122a971981c5ea"
+dependencies = [
+ "getopts",
+]
+
+[[package]]
 name = "doc-comment"
 version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -261,6 +270,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c31b6d751ae2c7f11320402d34e41349dd1016f8d5d45e48c4312bc8625af50c"
 dependencies = [
  "byteorder",
+]
+
+[[package]]
+name = "getopts"
+version = "0.2.21"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "14dbbfd5c71d70241ecf9e6f13737f7b5ce823821063188d7e46c41d371eebd5"
+dependencies = [
+ "unicode-width",
 ]
 
 [[package]]
@@ -326,6 +344,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d4f7ec66360130972f34830bfad9ef05c6610a43938a467bcc9ab9369ab3478f"
 dependencies = [
  "rawpointer",
+]
+
+[[package]]
+name = "measure-variations"
+version = "0.1.0"
+dependencies = [
+ "bio",
+ "difference",
+ "strsim",
 ]
 
 [[package]]
@@ -637,14 +664,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d4f410fedcf71af0345d7607d246e7ad15faaadd49d240ee3b24e5dc21a820ac"
 
 [[package]]
-name = "sequences"
-version = "0.1.0"
-dependencies = [
- "bio",
- "strsim",
-]
-
-[[package]]
 name = "serde"
 version = "1.0.110"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -755,6 +774,12 @@ name = "unicode-segmentation"
 version = "1.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e83e153d1053cbb5a118eeff7fd5be06ed99153f00dbcd8ae310c5fb2b22edc0"
+
+[[package]]
+name = "unicode-width"
+version = "0.1.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "caaa9d531767d1ff2150b9332433f32a24622147e5ebb1f26409d5da67afd479"
 
 [[package]]
 name = "unicode-xid"
