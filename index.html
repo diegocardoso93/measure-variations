@@ -2,19 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>SARS-COV2 genome comparator</title>
+    <title>SARS-COV-2 genome comparator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
   </head>
   <body>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
-    <input id="option1" placeholder="Country / Date and [enter]" />
-    <select id="select-option1" style="max-width: 90vw;"></select>
-    <br />
-    <input id="option2" placeholder="Country / Date and [enter]" />
-    <select id="select-option2" style="max-width: 90vw;"></select><br/>
-    <button id="compare" >Compare</button>
-    <h3 id="distance"></h1>
-    <div id="content"></div>
+    <div id="app"></div>
     <script src="./bootstrap.js"></script>
   </body>
 </html>
