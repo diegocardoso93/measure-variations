@@ -135,6 +135,7 @@
             .then(response => response.text());
 
           const comparison = Comparison.new(file1Content, file2Content);
+          this.partContainers = [];
           for (let nucleotide of comparison.diffs()) {
             if (nucleotide == 0 || nucleotide == 1 || (nucleotide == 255)) {
               this.partContainers.push({
@@ -175,20 +176,25 @@
 
   .md-layout {
     max-width: 100vh;
-    width: 600px;
+    @media (min-width: 700px) {
+      width: 600px;
+    }
   }
 
   .md-content {
-    width: 736px;
-    max-width: 95vw;
+    width: 90vw;
     height: 83vh;
     overflow: auto;
     background: #212121;
     line-break: anywhere;
     font-family: monospace;
-    margin: 10px;
+    margin: 0;
     padding: 6px;
     max-height: 64vh;
+    @media (min-width: 700px) {
+      margin: 10px;
+      width: 736px;
+    }
   }
 
   .green {
