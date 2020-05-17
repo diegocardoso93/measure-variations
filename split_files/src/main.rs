@@ -24,7 +24,7 @@ fn main() {
             Ok(file) => file,
         };
 
-        match file.write_all(seq) {
+        match file.write_all((format!(">{} {}\n", record.id(), record.desc().unwrap()) + str::from_utf8(&seq).unwrap()).as_bytes()) {
             Err(why) => panic!("couldn't write to {}: {}", display, why.description()),
             Ok(_) => println!("successfully wrote to {}", display),
         }
