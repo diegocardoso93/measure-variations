@@ -2,13 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello wasm-pack!</title>
+    <title>SARS-COV2 genome comparator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
-	>MT126808 |Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/BRA/SP02/2020| complete genome
-	<br/>
-	>MN908947 |Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1| complete genome
+    <input id="option1" placeholder="Country / Date and [enter]" />
+    <select id="select-option1" style="max-width: 90vw;"></select>
+    <br />
+    <input id="option2" placeholder="Country / Date and [enter]" />
+    <select id="select-option2" style="max-width: 90vw;"></select><br/>
+    <button id="compare" >Compare</button>
+    <h3 id="distance"></h1>
     <div id="content"></div>
     <script src="./bootstrap.js"></script>
   </body>
